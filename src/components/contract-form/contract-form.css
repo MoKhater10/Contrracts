@@ -1,0 +1,154 @@
+.contract-type {
+  /* padding: 4rem 5rem 3rem; */
+}
+.dropDown-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.dropDown-parent .dropDown-title {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+.contract-form form {
+  gap: 2rem;
+  padding: 0 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.form-div form {
+  min-height: 80vh;
+}
+.contract-form form .form-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contract-form form div,
+.contract-form form div input {
+  width: 100%;
+}
+.contract-form form div label {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(2, 39, 77, 1);
+}
+.contract-form form div input {
+  border: none;
+  border: 1px solid #e6e6e6;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.contract-form form div input:focus {
+  outline: none;
+}
+.contract-form form div input::placeholder {
+  color: #c2c1c1;
+}
+.contract-form .btn {
+  width: 100%;
+  padding: 0 10rem;
+}
+.contract-form button {
+  font-size: 25px;
+  background-color: rgba(92, 75, 153, 1);
+  color: white;
+  margin-top: 3rem;
+  width: 75%;
+  padding: 5px 0;
+  border: 1px solid white;
+  margin-bottom: 4rem;
+  border-radius: 8px;
+}
+.Dropdown-control {
+  width: 12rem;
+}
+/* div#react-select-3-placeholder:after {
+  content: "";
+  width: 35px;
+  height: 20px;
+  display: inline-block;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/149/149852.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+.css-t3ipsp-control div#react-select-3-placeholder:after {
+  display: none;
+}
+div#react-select-3-placeholder {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+.dropDown-parent > div:last-child {
+  width: 45% !important;
+  margin: 2rem 0;
+}
+.hintMsg {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.spanhint {
+  color: #9b9b9b;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  text-align: right;
+}
+@media (max-width: 992px) {
+  .contract-form form {
+    grid-template-columns: 1fr;
+    padding: 0 5rem;
+  }
+  .contract-form .btn {
+    padding: 0 5rem;
+  }
+  /* .contract-type {
+    padding-right: 6rem;
+    padding-left: 6rem;
+  } */
+  .contract-form form div label {
+    font-size: 18px;
+  }
+  .contract-form button {
+    font-size: 20px;
+    /* border: 3px solid #e6e6e6; */
+    color: white;
+    margin: 3rem 0;
+    width: 100%;
+  }
+  .contract-type {
+    /* padding-top: 3rem; */
+  }
+}
+
+@media (max-width: 768px) {
+  .contract-form form,
+  .contract-form .btn {
+    padding: 0 2rem;
+  }
+  /* .contract-type {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  } */
+  .Dropdown-control {
+    width: 7rem;
+  }
+  .css-1xc3v61-indicatorContainer {
+    padding: 2px;
+  }
+}
+@media (max-width: 280px) {
+  .contract-form form,
+  .contract-form .btn {
+    padding: 0;
+  }
+  .contract-type {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

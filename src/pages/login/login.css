@@ -1,0 +1,114 @@
+.login {
+  display: flex;
+}
+.login .form {
+  width: 100%;
+}
+.login .form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(208, 208, 208, 1);
+}
+.login .login-parent {
+  flex-direction: column;
+  position: relative;
+  width: 60%;
+}
+.login .form {
+  width: 100%;
+  min-width: 250px;
+  max-width: 350px;
+}
+.login .form form {
+  width: 100%;
+}
+.login .form button {
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  background: rgba(92, 75, 153, 1);
+  color: white;
+  border-radius: 6px;
+}
+.login .form .hint {
+  color: #bf0000;
+  width: 100%;
+  text-align: -webkit-right;
+  margin-top: -10px;
+}
+.login .form .label {
+  color: (0, 0, 0, 1);
+}
+.form .error {
+  border: 1px solid red;
+}
+button.error {
+  opacity: 0.5;
+  cursor: context-menu !important;
+  pointer-events: none;
+}
+
+.login-logo .login-logo-img {
+  width: 100%;
+}
+.login .form .form-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.contract-img {
+  width: 50%;
+  position: relative;
+}
+.contract-img::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 219, 195, 0.24);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.contract-img img {
+  width: 100%;
+  height: 100vh;
+}
+.vector1,
+.vector2 {
+  position: absolute;
+}
+.vector1 {
+  top: 0;
+  left: 0;
+}
+.vector2 {
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .contract-img {
+    display: none;
+  }
+  .login-parent {
+    height: 100vh;
+  }
+  .login .login-parent {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-logo {
+    width: 30%;
+  }
+  .vector2 {
+    right: 0;
+  }
+  .vector1 {
+    left: 0px;
+  }
+}

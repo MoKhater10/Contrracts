@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+  font-family: 'Noto Sans Arabic', sans-serif;
+  direction: rtl;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.App {
+  text-align: center;
+  /* background-image: url(../images/azzrk-hero-back.webp); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.w-100{
+  width: 100%;
+}
+.w-10{
+  width: 10%;
+}
+.w-30{
+  width: 30%;
+}
+.w-60{
+  width: 60%;
+}
+.vh{
+  height: 100vh;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  background-color: #212121;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.contract.w-100.p-1.d-flex.justify-content-center.align-items-center {
+  background: #222121;
+  border-radius: 10px;
+  color: white;
+  padding: 0 13px !important;
+
+}
+.name {
+  text-align: initial;
+}
+.rightContent{
+  width: 50% !important;
+}
+.contract {
+  margin: 10px 0;
+}
+.contractSelectr{
+  width: 100%;
+  margin: 0px 20px;
+
+}
+@media(max-width:776px){
+  .rightContent,.leftContent {
+    width: 100% !important;
+  }
+  .contractPage .container {
+    flex-direction: column-reverse !important;
+    /* padding-top: 50px; */
+}
+
+.contractSelectr{
+  width: 100%;}
+  .contract .btn {
+    padding: 5px !important;
+
+}
+}
